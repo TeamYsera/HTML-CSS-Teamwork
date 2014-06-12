@@ -1,0 +1,71 @@
+header {
+    width: 100%;
+    height: 150px;
+    border: solid 1px;
+}
+
+.menu {
+    /*width: 250px;*/
+    height: 85px;
+    position: relative;
+    vertical-align: top;
+}
+
+.menu-content {
+    background: white;
+    width: 150px;
+    height: 85px;
+    list-style-type: none;
+    padding-left: 10px;
+    border: solid 1px;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: height 5s; /* For Safari 3.1 to 6.0*/
+    transition: height 1s;
+    overflow: hidden;
+}
+
+.menu-content:hover {
+    height: 200px;
+}
+
+.menu-header {
+    width: 150px;
+    height: 85px;
+    background: url("../image/dragon.png") no-repeat center;
+    vertical-align: bottom;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.menu-content li{
+    border-bottom: solid 1px;
+}
+
+.menu-header span {
+    width: 150px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.menu-content:hover .menu-header {
+    background: url("../image/70780.gif") no-repeat center;
+}
+
+a{
+    display: block;
+}
+
+a:link, a:active, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background: black;
+    color: white;
+}
