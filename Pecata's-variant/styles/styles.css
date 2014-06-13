@@ -34,17 +34,25 @@ header{
     max-width: 900px;
     margin: 0 auto 20px auto;
     padding-bottom: 15px;
+    height: 80px;
 }
+    .headlogo{
+        margin-top: 5px;
+        position: relative;
+        float: left;
+    }
+
     header h1{
-        margin: 35px 0 0 0;
-        font-size: 45px;
+        position: absolute;
+        font-size: 48px;
         color: #e55511;
         font-family: "Permanent Marker";
-        width: 200px;
+        left: 100px;
         font-weight: bold;
     }
 
     nav{
+        margin-top: 85px;
         float: right;
     }
 
@@ -54,7 +62,7 @@ header{
 
     nav ul li{
         display: block;
-        padding: 3px 15px;
+        padding: 3px 12px;
         float: left;
         background-color: #e55511;
     }
@@ -68,12 +76,11 @@ header{
         transition: all .25s ease;
         font-size: 14px;
         font-weight: bold;
-        padding: 1px 3px;
+        padding: 0px;
         color: #333333;
     }
 
     nav ul li a:hover{
         background-color: #e55511;
         color: #ffffff;
-        border-radius: 2px;
     }
