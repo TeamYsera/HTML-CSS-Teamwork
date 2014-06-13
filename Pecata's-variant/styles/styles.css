@@ -1,8 +1,8 @@
 body{
     border-top: 5px solid #e55511;
     background-color: #ebe8de;
-    font-family: 'Shadows Into Light', 'Indie Flower', sans-serif, cursive; /*If it's going to cartoon tematic site
-                                                                                    I think this fonts are suitable*/
+    font-family: 'Permanent Marker', 'Shadows Into Light', 'Indie Flower', sans-serif, cursive; /*If it's going to be
+                                                                cartoon tematic site I think this fonts are suitable*/
     color: #333;
     border-bottom: 1px solid #e55511;
 }
@@ -39,7 +39,7 @@ header{
         margin: 35px 0 0 0;
         font-size: 45px;
         color: #e55511;
-        font-family: "Shadows Into Light";
+        font-family: "Permanent Marker";
         width: 200px;
         font-weight: bold;
     }
@@ -66,7 +66,7 @@ header{
         -ms-transition: prop time;
         -o-transition: prop time;
         transition: all .25s ease;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         padding: 1px 3px;
         color: #333333;
