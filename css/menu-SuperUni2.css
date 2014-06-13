@@ -1,0 +1,89 @@
+header{
+    background: url("../image/header-background.png") no-repeat;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+nav{
+    position: relative;
+    left: 10px;
+}
+
+nav .logo{
+    background: url("../image/bits.png");
+    width: 175px;
+    height: 175px;
+    border-radius: 88px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 0px;
+    z-index: 100;
+}
+
+nav .logo img{
+    margin-top: 30px;
+    width: 100%;
+ }
+
+.menu{
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    left: -50px;
+}
+
+.menu li{
+    background: #929AA6;
+    height: 30px;
+    margin: 1px;
+    color: white;
+    text-align: right;
+    opacity: 0.9;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 15px;
+    display: block;
+}
+
+nav .button1{
+    width: 220px;
+    border-top-right-radius: 20px;
+}
+
+nav .button2{
+    width: 270px;
+    border-bottom-right-radius: 20px;
+}
+
+nav .button3{
+    width: 170px;
+    border-bottom-right-radius: 20px;
+}
+
+nav .button4 {
+    width: 145px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu li:hover a{
+    background: white;
+    height: 28px;
+    margin: 1px;
+    color: black;
+}
+
+.menu li.button1:hover a{
+    border-top-right-radius: 20px;
+}
+
+.menu li.button2:hover a, .menu li.button3:hover a,
+.menu li.button4:hover a{
+    border-bottom-right-radius: 20px;
+}
