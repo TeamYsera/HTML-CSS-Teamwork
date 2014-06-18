@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'MyWebFont';
-    src: url('/fonts/beer%20money.ttf'); /* IE9 Compat Modes */
-    src: url('/fonts/Sprite%20Graffiti.otf') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/beer%20money.ttf') format('truetype'), /* Modern Browsers */
+    src: url("../fonts/beer%20money.ttf");
 }
 
 body{
@@ -11,11 +9,14 @@ body{
     font-family: MyWebFont, "Sprite Graffiti", 'Permanent Marker', 'Shadows Into Light', 'Indie Flower', sans-serif, cursive; /*If it's going to be
                                                                 cartoon tematic site I think this fonts are suitable*/
     color: #333;
+    border-collapse: collapse;
 }
 
 p{
     margin: 5px 0;
     line-height: 20px;
+    word-wrap: break-word;
+    overflow: auto;
 }
 
 a{
@@ -119,6 +120,7 @@ header{
         padding: 0;
     }
 
+    /*Maybe pointless since figcaption is hidden*/
 figcaption{
     line-height: 10px;
     font-size: 12px;
@@ -128,11 +130,14 @@ figcaption{
 }
 
 #main-container{
+    display: table;
+    text-align: center;
+    margin: auto auto;
     position: relative;
     width: auto;
     max-width: 900px;
     height: auto;
-    margin: 0 auto;
+    border: 1px solid #e55511;
 }
 
 #main-container .image-item{
@@ -141,8 +146,10 @@ figcaption{
 }
 
 #main-container .image-item img{
+    display: block;
+    margin: 0 auto;
     width: auto;
-    max-width: 280px;
+    max-width: 285px;
     height: 149px;
     border-bottom: 0px;
 }
@@ -153,7 +160,6 @@ figcaption{
 }
 
 .thumb-image {
-    display: block;
     position: absolute;
     left: 0;
     top: 0;
@@ -178,6 +184,50 @@ figcaption{
     clip: rect(1px,1px,1px,1px);
 }
 
+
+/*The hidden popups*/
+#lightbox div{
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    border: 30px solid #ffffff;
+    left: 15%;
+    top: 19%;
+    z-index: 0;
+    border-radius: 10px;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+}
+
+#lightbox div:target{
+    opacity: 1;
+    z-index: 10;
+}
+
+#lightbox img{
+    float: left;
+    border-radius: 3px;
+    width: auto;
+    max-width: 1024px;
+}
+
+#lightbox a{
+    background: url("../icons/5-cross.png") left top no-repeat;
+    width: 32px;
+    height: 32px;
+    top: -42px;
+    right: -42px;
+    position: absolute;
+}
+
+
+
+
+/*footer styling*/
+
 footer {
     position: relative;
     clear: both;
@@ -196,7 +246,7 @@ footer .wrapper{
 }
 
 footer .wrapper article {
-    font-family: 'beer money', 'Shadows Into Light',  sans-serif, cursive;
+    font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
     color: #ababab;
     float: left;
     width: 280px;
@@ -210,7 +260,7 @@ footer .wrapper article h4 {
 }
 
 footer .wrapper ul{
-    font-family: "beer money";
+    font-family: "MyWebFont";
     font-size: 20px;
 }
 
