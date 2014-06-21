@@ -1,0 +1,53 @@
+section.main-container {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main-container article figure {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+.main-container article figure img{
+    width: 400px;
+    height: 100%;
+}
+
+article figure span.question, span.answer{
+    font-size: 3.5rem;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    transition: all 1.5s ease;
+}
+
+article figure span.question{
+    top: 0px;
+    width: 400px;
+    height: 100%;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+article figure span.answer{
+    top: 0;
+    width: 400px;
+    height: 35px;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0.02;
+
+}
+
+article figure:hover span.question {
+    opacity: 0.02;
+}
+
+article figure:hover span.answer {
+    opacity: 0.8;
+}
