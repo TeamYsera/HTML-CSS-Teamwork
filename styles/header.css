@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'MyWebFont';
-    src: url("../fonts/beer%20money.ttf");
+    src: url("../fonts/beer-money.ttf");
 }
 
 html {
     font-size: 10px;
+    height: 100%;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     background-color: #ebe8de;
 }
 
-body header{
+body {
     font-family: MyWebFont, "Sprite Graffiti", 'Permanent Marker', 'Shadows Into Light', 'Indie Flower', sans-serif, cursive;
 }
 

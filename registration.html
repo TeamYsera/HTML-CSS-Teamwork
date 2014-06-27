@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>Тест за прием в СуперУни</title>
-    <link href="styles/header.css" rel="stylesheet">
-    <link href="styles/footer.css" rel="stylesheet">
-    <link href="styles/registration.css" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="styles/registration.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="styles/header.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="styles/footer.css" type="text/css" media="screen"/>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'/>
 </head>
 <body>
+<header>
+    <div>
+        <div class="head-logo">
+            <a href="/">
+                <h1>uper</h1>
+                <img src="img/100h.png" alt="Logo"/>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">начало</a>
+                </li>
+                <li>
+                    <a href="mission.html">за организацията</a>
+                </li>
+                <li>
+                    <a href="enemies.html">екип</a>
+                </li>
+                <li>
+                    <a href="weapons.html">цели</a>
+                </li>
+                <li>
+                    <a href="registration.html">Кандидатстване</a>
+                </li>
+                <li>
+                    <a href="masters.html">контакти</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <main>
-    <div id="startTest" >
+    <div id="startTest">
         <p>За да Ви приемем в редиците на СуперУни трябва да решите нашият тест без грешки.</p>
         <a href="#start" onclick="startTest.style.display = 'none'">Начало на теста</a>
     </div>
@@ -18,14 +53,14 @@
         <div>
             <h1>Въпрос 1</h1>
 
-            <h3>Кое е специалитет на лейди Джава?</h3>
+            <p>Кое е специалитет на лейди Джава?</p>
 
             <form action="#">
                 <input id="q11" type="radio" name="q1"/><label for="q11"> System.Console.WriteLine();</label><br>
                 <input id="q12" type="radio" name="q1"/><label for="q12"> System.out.println();</label>
             </form>
 
-            <a href="#question2">Следващ въпрос</a>
+            <div><a href="#question2">Следващ въпрос</a></div>
         </div>
     </section>
 
@@ -37,7 +72,7 @@
 
             <h1>Въпрос 2</h1>
 
-            <h3>Познавате ли ексепшъните? "ArrayIndexOutOfBoundsException" на кой е даденият ексепшън?</h3>
+            <p>Познавате ли ексепшъните? "ArrayIndexOutOfBoundsException" на кой е даденият ексепшън?</p>
 
             <form action="#">
                 <input id="q21" type="radio" name="q2"/><label for="q21">Сир Шарп</label><br>
@@ -45,7 +80,7 @@
                 <input id="q23" type="radio" name="q2"/><label for="q23">крал HTML</label>
             </form>
 
-            <a href="#question3">Следващ въпрос</a>
+            <div><a href="#question3">Следващ въпрос</a></div>
         </div>
     </section>
 
@@ -56,7 +91,7 @@
 
             <h1>Въпрос 3</h1>
 
-            <h3> Кое е най-очарователното в принцеса CSS?</h3>
+            <p> Кое е най-очарователното в принцеса CSS?</p>
 
             <form action="#">
                 <input id="q31" type="radio" name="q3"/><label for="q31">нейният font-style</label><br>
@@ -64,7 +99,7 @@
                 <input id="q33" type="radio" name="q3"/><label for="q33">нейният background-img</label>
             </form>
 
-            <a href="#question4">Следващ въпрос</a>
+            <div><a href="#question4">Следващ въпрос</a></div>
         </div>
     </section>
 
@@ -78,67 +113,164 @@
 
             <h1>Въпрос 4</h1>
 
-            <h3>На коя от снимките е Джокер JavaScript</h3>
-            <img id="picture1" class="jscript" src="img/Joker.jpg"> <img id="picture2" class="jscript"
-                                                                         src="img/fake-Joker.jpg">
+            <p>На коя от снимките е JokerScript</p>
 
+            <div>
+                <img id="picture1" class="jscript" src="img/Joker.jpg">
+                <img id="picture2" class="jscript" src="img/fake-Joker.jpg">
+            </div>
 
             <form action="#">
+                <script>
+                    function changePucture(picture1, picture2) {
+                        document.getElementById(picture1).src = "img/Joker.jpg";
+                        document.getElementById(picture2).src = "img/fake-Joker.jpg";
+                    }
+                </script>
                 <input id="q41" type="radio" name="q4"
-                       onclick="picture1.src = 'img/fake-Joker.jpg'; picture2.src = 'img/Joker.jpg'"/>
-                <label for="q41" onclick="picture1.src = 'img/fake-Joker.jpg'; picture2.src = 'img/Joker.jpg'">на
+                       onclick="changePucture('picture2', 'picture1')"/>
+                <label for="q41" onclick="changePucture('picture2', 'picture1')">на
                     първата</label><br>
                 <input id="q42" type="radio" name="q4"
-                       onclick="picture2.src = 'img/fake-Joker.jpg'; picture1.src = 'img/Joker.jpg'"/>
-                <label for="q42" onclick="picture2.src = 'img/fake-Joker.jpg'; picture1.src = 'img/Joker.jpg'">на
+                       onclick="changePucture('picture1', 'picture2')"/>
+                <label for="q42" onclick="changePucture('picture1', 'picture2')">на
                     втората</label>
             </form>
 
-            <a href="#question5">Следващ въпрос</a>
+            <div><a href="#question5">Следващ въпрос</a></div>
         </div>
     </section>
 
     <section id="question5">
-    <div>
-        <p>Предупредихме Ви, че въпроса е направо невъзможен! </p>
+        <div>
+            <p>Предупредихме Ви, че въпроса е направо невъзможен! </p>
 
-        <p>JavaScript e непредвидим. </p>
-        <hr/>
-        <h1>Въпрос 5</h1>
+            <p>JokerScript e непредвидим. </p>
+            <hr/>
+            <h1>Въпрос 5</h1>
 
-        <h3>Кой е любимият език на Сир Шарп?</h3>
+            <p>Кой е любимият език на Сир Шарп?</p>
 
+            <form action="#">
+                <input id="q51" type="radio" name="q5"/><label for="q51">C#</label><br>
+                <input id="q52" type="radio" name="q5"/><label for="q52">Java</label><br>
+                <input id="q53" type="radio" name="q5"/><label for="q53">JavaScript</label><br>
+                <label for="q54">Ако е друг, какъв?</label><br><input id="q54" type="text" name="q5"/>
+            </form>
 
-        <form action="#">
-            <input id="q51" type="radio" name="q5"/><label for="q51">C#</label><br>
-            <input id="q52" type="radio" name="q5"/><label for="q52">Java</label><br>
-            <input id="q53" type="radio" name="q5"/><label for="q53">JavaScript</label><br>
-            <label for="q54">Ако е друг, какъв?</label><br><input id="q54" type="text" name="q5"/>
-        </form>
-
-        <a href="#result">Резултати</a>
-    </div>
+            <div><a href="#result">Резултати</a></div>
+        </div>
     </section>
 
     <section id="result">
-    <div>
-        <p>Верният отговор на последният въпрос е: </p>
-        <img class="css" src="img/tongue.jpg" alt="любият език на Сир Шарп">
+        <div>
+            <p>Верният отговор на последният въпрос е: </p>
+            <img class="css" src="img/tongue.jpg" alt="любият език на Сир Шарп">
 
-        <p>Сир Шарп от всички езици най-обича задушеният.</p>
-    </div>
+            <p>Сир Шарп от всички езици най-обича задушеният.</p>
+        </div>
 
-    <div class="result">
-        <h1>Резултати</h1>
+        <div class="result">
+            <h1>Резултати</h1>
 
-        <p>След задълбочен анализ на резултатите заключихме, че Вие сте нашият човек. Приет сте в редиците на
-            СуперУни.</p>
+            <p>След задълбочен анализ на резултатите заключихме, че Вие сте нашият човек.</p>
 
-        <p>За оформяне на документите ни потърсете на адрес:<br/> замъка "Еклипс", Отдел: #A1, стая:
-            100100. Търсете Гошо, ако го няма - Пешо.</p>
-    </div>
+            <p>Приет сте в редиците на СуперУни.</p>
+
+            <p>За оформяне на документите ни потърсете на адрес:</p>
+
+            <p><span class="italic">замъка "Еклипс", Отдел: #A1, стая: 100100. Търсете Гошо, ако го няма - Пешо.</span>
+            </p>
+        </div>
     </section>
 
 </main>
+<footer>
+    <h2 class="hidden">Super uni footer</h2>
+    <section class="wrapper">
+        <h3 class="hidden">Footer section</h3>
+        <article>
+            <h4>За университета</h4>
+            <ul>
+                <li>
+                    <a href="/">Мисия</a>
+                </li>
+                <li>
+                    <a href="/">Екипът</a>
+                </li>
+                <li>
+                    <a href="/">Нашите врагове</a>
+                </li>
+                <li>
+                    <a href="/">Тренировъчни полета</a>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h4>Приятели</h4>
+            <ul>
+                <li>
+                    <a href="https://softuni.bg">Софтуерен университет</a>
+                </li>
+                <li>
+                    <a href="http://nakov.com">Super master</a>
+                </li>
+                <li>
+                    <a href="http://www.introprogramming.info/">Полезни книги</a>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h4>За контакти</h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/TzvetanIG">Цветан Ганчев</a>
+                </li>
+                <li>
+                    <a href="https://github.com/DamianDobrev">Дамян Добрев</a>
+                </li>
+                <li>
+                    <a href="https://github.com/shan0">Даниел Дудин</a>
+                </li>
+                <li>
+                    <a href="https://github.com/radtonev">Радослав Тонев</a>
+                </li>
+                <li>
+                    <a href="https://github.com/petko-petkov">Петко Петков</a>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="social">
+        <h3 class="hidden">Social contacts</h3>
+
+        <div class="wrapper">
+            <p>some copyright text and grtitude to <a href="http://iconarchive.com">Iconarchive</a> for the icons,
+                <a href="http://fontfabric.com">fontfabric</a> and <a href="http://www.rolandhuse.com">Roland
+                    Huse </a>for the fonts.</p>
+
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="icons/5-facebook.png" alt="Facebook"/>
+                </a>
+                <a href="http://youtube.com">
+                    <img src="icons/5-tube.png" alt="Google plus icon"/>
+                </a>
+                <a href="https://twitter.com">
+                    <img src="icons/5-twitter.png" alt="Twitter""/>
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="icons/5-in.png" alt="LinkedIn"/>
+                </a>
+                <a href="https://www.flickr.com/">
+                    <img src="icons/5-flickr.png" alt="Flickr"/>
+                </a>
+                <a href="/">
+                    <img src="icons/5-RSS.png" alt="RSS"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

@@ -1,10 +1,13 @@
 main.main-container {
     position: relative;
-    text-align: center;
     margin: 10px 0;
 }
 
-main.main-container > div {
+main > div{
+    text-align: center;
+}
+
+main.main-container > div > div {
     display: inline-block;
 }
 
@@ -17,13 +20,11 @@ main.main-container > div {
 
 .main-container article figure img{
     width: 400px;
-    height: 100%;
 }
 
 .main-container article.trainer figure img,
 .main-container article.training figure img{
     width: 134px;
-    height: 100%;
 }
 
 article figure span.question, span.answer{
@@ -32,7 +33,11 @@ article figure span.question, span.answer{
     left: 0px;
     text-align: center;
     display: block;
-    transition: all 1.5s ease;
+    -webkit-transition: prop time;
+    -moz-transition: prop time;
+    -ms-transition: prop time;
+    -o-transition: prop time;
+    transition: all .25s ease;
 }
 
 article figure span.question{

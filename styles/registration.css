@@ -1,12 +1,16 @@
-@font-face {
-    font-family: Tahoma;
-    src: url("../fonts/tahoma.ttf");
-}
-
 main {
+    /*size*/
+    width: 100%;
+    min-height: 500px;
+    /*padding*/
+    padding-top: 30px;
     /*text and fonts*/
     font-size: 1.8rem;
-    font-family: Tahoma;
+    font-family:   "Tahoma", "Helvetica", San-serif;
+}
+
+main > section{
+    width: 100%;
 }
 
 #start, #question1, #question2, #question3, #question4, #question5, #result, #startTest {
@@ -23,7 +27,7 @@ main {
     display: block;
 }
 
-main div {
+main section > div,  main > div {
     /*size*/
     width: 50%;
     /*background and color*/
@@ -42,6 +46,7 @@ main div {
 main div.result{
     width: 60%;
     text-align: justify;
+    margin-top: 30px;
 
 }
 
@@ -50,10 +55,10 @@ main div.result{
     display: block;
 }
 
-#question4 img.css {
+img.css {
     width: 20%;
+    margin-bottom: 10px;
 }
-
 
 #question4 img.css:hover {
     width: 100%;
@@ -93,5 +98,33 @@ main a:active {
 main a:hover {
     color: #ffffff;
 }
+main section form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form label, .italic{
+    font-style: italic;
+}
+
+form input, form label {
+    margin-bottom: 7px;
+}
+
+main section h1{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+main section:last-child h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+main section div p, main section h1, main section form {
+    margin-bottom: 2rem;
+}
+
 
 
