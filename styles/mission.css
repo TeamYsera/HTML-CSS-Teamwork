@@ -1,22 +1,35 @@
 body{
-    font-family: Verdana;
+    font-family:  'mywebfont';
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 45px;
     color: rgba(22, 27, 22, 1);
 }
 
 p{
+    font-family: 'mywebfont', Verdana;
     display: inline;
-    margin: 5px 0;
+    margin: 5px 20px;
     line-height: 20px;
     word-wrap: break-word;
-    font-size: 12px;
+    font-size: 18px;
     overflow: auto;
     text-align: justify;
+    line-height: 22px;
 }
 
+.mission-container div {
+    background-color: #ebe8de;
+    padding: 10px;
+    box-shadow: 10px 10px 20px #888888   ;
+}
+
+.mission-container article{
+    padding-bottom: 30px;
+}
 
 .mission-container figure{
     margin: 10px 10px;
@@ -24,7 +37,8 @@ p{
 }
 
 .mission-container figure img, figcaption {
-    width: 250px;
+    width: 200px;
+    font-size: 12px;
 }
 
 .mission-container{
