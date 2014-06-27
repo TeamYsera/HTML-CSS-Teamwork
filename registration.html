@@ -106,7 +106,7 @@
     <section id="question4">
         <div>
             <p>Ами верният отговор е background-img. </p>
-            <img class="css" src="img/CSS.jpg">
+            <img class="css" src="img/CSS.jpg" alt="background-img">
 
             <p>Напомняме Ви да не се разсейвате! Следва изключително труден въпрос.</p>
             <hr/>
@@ -116,24 +116,24 @@
             <p>На коя от снимките е JokerScript</p>
 
             <div>
-                <img id="picture1" class="jscript" src="img/Joker.jpg">
-                <img id="picture2" class="jscript" src="img/fake-Joker.jpg">
+                <img id="picture1" class="jscript" src="img/Joker.jpg" alt="JokerScript">
+                <img id="picture2" class="jscript" src="img/fake-Joker.jpg" alt="fake-Joker">
             </div>
 
             <form action="#">
                 <script>
-                    function changePucture(picture1, picture2) {
+                    function changePicture(picture1, picture2) {
                         document.getElementById(picture1).src = "img/Joker.jpg";
                         document.getElementById(picture2).src = "img/fake-Joker.jpg";
                     }
                 </script>
                 <input id="q41" type="radio" name="q4"
-                       onclick="changePucture('picture2', 'picture1')"/>
-                <label for="q41" onclick="changePucture('picture2', 'picture1')">на
+                       onclick="changePicture('picture2', 'picture1')"/>
+                <label for="q41" onclick="changePicture('picture2', 'picture1')">на
                     първата</label><br>
                 <input id="q42" type="radio" name="q4"
-                       onclick="changePucture('picture1', 'picture2')"/>
-                <label for="q42" onclick="changePucture('picture1', 'picture2')">на
+                       onclick="changePicture('picture1', 'picture2')"/>
+                <label for="q42" onclick="changePicture('picture1', 'picture2')">на
                     втората</label>
             </form>
 
@@ -257,7 +257,7 @@
                     <img src="icons/5-tube.png" alt="Google plus icon"/>
                 </a>
                 <a href="https://twitter.com">
-                    <img src="icons/5-twitter.png" alt="Twitter""/>
+                    <img src="icons/5-twitter.png" alt="Twitter"/>
                 </a>
                 <a href="https://linkedin.com">
                     <img src="icons/5-in.png" alt="LinkedIn"/>

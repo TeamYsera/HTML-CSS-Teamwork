@@ -27,7 +27,7 @@ main.main-container > div > div {
     width: 134px;
 }
 
-article figure span.question, span.answer{
+article figure .question, span.answer{
     font-size: 4rem;
     position: absolute;
     left: 0px;
@@ -37,10 +37,10 @@ article figure span.question, span.answer{
     -moz-transition: prop time;
     -ms-transition: prop time;
     -o-transition: prop time;
-    transition: all .25s ease;
+    transition: all .5s ease;
 }
 
-article figure span.question{
+article figure .question{
     top: 0px;
     width: 400px;
     height: auto;
@@ -49,14 +49,14 @@ article figure span.question{
     opacity: 0.65;
 }
 
-.main-container article.trainer span.question{
+.main-container article.trainer .question{
     width: 100%;
     height: 100%;
     font-size: 5rem;
     padding-top: 0;
 }
 
-.main-container article.training span.question{
+.main-container article.training .question{
     width: 100%;
     height: 100%;
     font-size: 5rem;
@@ -72,7 +72,7 @@ article figure span.answer{
 
 }
 
-article figure:hover span.question {
+article figure:hover .question {
     opacity: 0.02;
 }
 
@@ -80,10 +80,10 @@ article figure:hover span.answer {
     opacity: 0.8;
 }
 
-.trainer div.padding-top{
+.trainer div div.padding-top{
      padding-top: 110px;
  }
 
-.training div.padding-top{
+.training div div.padding-top{
     padding-top: 70px;
 }
