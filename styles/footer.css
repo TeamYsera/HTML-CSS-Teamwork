@@ -1,0 +1,103 @@
+/*footer styling*/
+
+footer {
+    position: relative;
+    clear: both;
+    width: auto;
+    height:250px;
+    background: #333333;
+    border-bottom: 9px solid #1d1d1d ;
+}
+
+footer .wrapper{
+    width: auto;
+    max-width: 900px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+footer .wrapper article {
+    font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
+    color: #ababab;
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+}
+
+footer .wrapper article h4 {
+    font-size: 26px;
+    color: #e55511;
+    font-weight: bold;
+}
+
+footer .wrapper ul{
+    font-family: "MyWebFont";
+    font-size: 20px;
+}
+
+footer .wrapper article a:hover{
+    color: #e55511;
+    opacity: 0.5;
+}
+
+#social {
+    height: 70px;
+    background: #1d1d1d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#social .wrapper{
+    position: relative;
+    padding-top: 25px;
+    color: #5e5e5e;
+}
+
+#social .wrapper .social {
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+#social .wrapper .social a{
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    -ms-transition: opacity .25s ease;
+    -o-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    opacity: 0.3;
+    margin-left: 12px;
+    display: block;
+    float: left;
+}
+
+#social .wrapper img{
+    width: 32px;
+}
+
+#social .wrapper .social a:hover{
+    opacity: 1;
+    color: #e55511;
+}
+
+#social .wrapper a{
+    color: #ababab;
+}
+
+#social .wrapper a:hover{
+    color: #fff;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: prop time;
+    -moz-transition: prop time;
+    -ms-transition: prop time;
+    -o-transition: prop time;
+    transition: color 0.5s ease;
+}

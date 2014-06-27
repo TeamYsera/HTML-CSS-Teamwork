@@ -1,0 +1,84 @@
+main.main-container {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main.main-container > div {
+    display: inline-block;
+}
+
+.main-container article figure {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.main-container article figure img{
+    width: 400px;
+    height: 100%;
+}
+
+.main-container article.trainer figure img,
+.main-container article.training figure img{
+    width: 134px;
+    height: 100%;
+}
+
+article figure span.question, span.answer{
+    font-size: 4rem;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    display: block;
+    transition: all 1.5s ease;
+}
+
+article figure span.question{
+    top: 0px;
+    width: 400px;
+    height: auto;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0.65;
+}
+
+.main-container article.trainer span.question{
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    padding-top: 0;
+}
+
+.main-container article.training span.question{
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+}
+
+article figure span.answer{
+    top: 0;
+    width: 400px;
+    height: auto;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0.02;
+
+}
+
+article figure:hover span.question {
+    opacity: 0.02;
+}
+
+article figure:hover span.answer {
+    opacity: 0.8;
+}
+
+.trainer div.padding-top{
+     padding-top: 110px;
+ }
+
+.training div.padding-top{
+    padding-top: 70px;
+}

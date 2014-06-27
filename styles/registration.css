@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Tahoma;
+    src: url("../fonts/tahoma.ttf");
+}
+
+main {
+    /*text and fonts*/
+    font-size: 1.8rem;
+    font-family: Tahoma;
+}
+
+#start, #question1, #question2, #question3, #question4, #question5, #result, #startTest {
+    /*size*/
+    display: none;
+    /*position*/
+    position: relative;
+    text-align: center;
+    /*padding and margin*/
+    padding: 2rem;
+}
+
+#startTest {
+    display: block;
+}
+
+main div {
+    /*size*/
+    width: 50%;
+    /*background and color*/
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    /*text and fonts*/
+    text-align: center;
+    /*padding and margin*/
+    padding: 2rem;
+    margin: 0 auto 1rem auto;
+    /*shadows*/
+    box-shadow : 0.5rem 0.5rem #000000;
+    position: relative;
+}
+
+main div.result{
+    width: 60%;
+    text-align: justify;
+
+}
+
+#start:target, #question1:target, #question2:target,
+#question3:target, #question4:target, #question5:target, #result:target {
+    display: block;
+}
+
+#question4 img.css {
+    width: 20%;
+}
+
+
+#question4 img.css:hover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#question4 img.jscript {
+    height: 20rem;
+}
+
+
+main a {
+    /*size*/
+    display: inline-block;
+    width: 20rem;
+    /*background and color*/
+    background-color: #E55511;
+    color: #000000;
+    /*text and fonts*/
+    text-decoration: none;
+    text-transform: uppercase;
+    /*border*/
+    border-radius: 0.5rem;
+    /*padding and margin*/
+    padding: 1rem;
+    margin: 1rem;
+    /*shadows*/
+    box-shadow: 0.5rem 0.5rem 0.5rem #000000;
+}
+
+main a:active {
+    box-shadow: none;
+}
+
+main a:hover {
+    color: #ffffff;
+}
+
+
