@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Тест за прием в СуперУни</title>
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/registration.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div id="startTest" >
+        <p>За да Ви приемем в редиците на СуперУни трябва да решите нашият тест без грешки.</p>
+        <a href="#start" onclick="startTest.style.display = 'none'">Начало на теста</a>
+    </div>
+
+    <section id="start">
+        <div>
+            <h1>Въпрос 1</h1>
+
+            <h3>Кое е специалитет на лейди Джава?</h3>
+
+            <form action="#">
+                <input id="q11" type="radio" name="q1"/><label for="q11"> System.Console.WriteLine();</label><br>
+                <input id="q12" type="radio" name="q1"/><label for="q12"> System.out.println();</label>
+            </form>
+
+            <a href="#question2">Следващ въпрос</a>
+        </div>
+    </section>
+
+    <section id="question2">
+        <div>
+            <p>Ок, приема се! <br> На следващият въпрос бъди по-съсредоточен!</p>
+            <hr/>
+
+
+            <h1>Въпрос 2</h1>
+
+            <h3>Познавате ли ексепшъните? "ArrayIndexOutOfBoundsException" на кой е даденият ексепшън?</h3>
+
+            <form action="#">
+                <input id="q21" type="radio" name="q2"/><label for="q21">Сир Шарп</label><br>
+                <input id="q22" type="radio" name="q2"/><label for="q22">Лайди Джава</label><br>
+                <input id="q23" type="radio" name="q2"/><label for="q23">крал HTML</label>
+            </form>
+
+            <a href="#question3">Следващ въпрос</a>
+        </div>
+    </section>
+
+    <section id="question3">
+        <div>
+            <p>Уау!!! <br> Внимавай! Мисля, че не внимаваш достатъчно!</p>
+            <hr/>
+
+            <h1>Въпрос 3</h1>
+
+            <h3> Кое е най-очарователното в принцеса CSS?</h3>
+
+            <form action="#">
+                <input id="q31" type="radio" name="q3"/><label for="q31">нейният font-style</label><br>
+                <input id="q32" type="radio" name="q3"/><label for="q32">нейните размери</label><br>
+                <input id="q33" type="radio" name="q3"/><label for="q33">нейният background-img</label>
+            </form>
+
+            <a href="#question4">Следващ въпрос</a>
+        </div>
+    </section>
+
+    <section id="question4">
+        <div>
+            <p>Ами верният отговор е background-img. </p>
+            <img class="css" src="img/CSS.jpg">
+
+            <p>Напомняме Ви да не се разсейвате! Следва изключително труден въпрос.</p>
+            <hr/>
+
+            <h1>Въпрос 4</h1>
+
+            <h3>На коя от снимките е Джокер JavaScript</h3>
+            <img id="picture1" class="jscript" src="img/Joker.jpg"> <img id="picture2" class="jscript"
+                                                                         src="img/fake-Joker.jpg">
+
+
+            <form action="#">
+                <input id="q41" type="radio" name="q4"
+                       onclick="picture1.src = 'img/fake-Joker.jpg'; picture2.src = 'img/Joker.jpg'"/>
+                <label for="q41" onclick="picture1.src = 'img/fake-Joker.jpg'; picture2.src = 'img/Joker.jpg'">на
+                    първата</label><br>
+                <input id="q42" type="radio" name="q4"
+                       onclick="picture2.src = 'img/fake-Joker.jpg'; picture1.src = 'img/Joker.jpg'"/>
+                <label for="q42" onclick="picture2.src = 'img/fake-Joker.jpg'; picture1.src = 'img/Joker.jpg'">на
+                    втората</label>
+            </form>
+
+            <a href="#question5">Следващ въпрос</a>
+        </div>
+    </section>
+
+    <section id="question5">
+    <div>
+        <p>Предупредихме Ви, че въпроса е направо невъзможен! </p>
+
+        <p>JavaScript e непредвидим. </p>
+        <hr/>
+        <h1>Въпрос 5</h1>
+
+        <h3>Кой е любимият език на Сир Шарп?</h3>
+
+
+        <form action="#">
+            <input id="q51" type="radio" name="q5"/><label for="q51">C#</label><br>
+            <input id="q52" type="radio" name="q5"/><label for="q52">Java</label><br>
+            <input id="q53" type="radio" name="q5"/><label for="q53">JavaScript</label><br>
+            <label for="q54">Ако е друг, какъв?</label><br><input id="q54" type="text" name="q5"/>
+        </form>
+
+        <a href="#result">Резултати</a>
+    </div>
+    </section>
+
+    <section id="result">
+    <div>
+        <p>Верният отговор на последният въпрос е: </p>
+        <img class="css" src="img/tongue.jpg" alt="любият език на Сир Шарп">
+
+        <p>Сир Шарп от всички езици най-обича задушеният.</p>
+    </div>
+
+    <div class="result">
+        <h1>Резултати</h1>
+
+        <p>След задълбочен анализ на резултатите заключихме, че Вие сте нашият човек. Приет сте в редиците на
+            СуперУни.</p>
+
+        <p>За оформяне на документите ни потърсете на адрес:<br/> замъка "Еклипс", Отдел: #A1, стая:
+            100100. Търсете Гошо, ако го няма - Пешо.</p>
+    </div>
+    </section>
+
+</main>
+</body>
+</html>
