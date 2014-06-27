@@ -1,0 +1,41 @@
+body{
+    font-family: Verdana;
+}
+
+h3 {
+    font-size: 3em;
+    color: rgba(22, 27, 22, 1);
+}
+
+p{
+    display: inline;
+    margin: 5px 0;
+    line-height: 20px;
+    word-wrap: break-word;
+    font-size: 12px;
+    overflow: auto;
+    text-align: justify;
+}
+
+
+.mission-container figure{
+    margin: 10px 10px;
+    float: left;
+}
+
+.mission-container figure img, figcaption {
+    width: 250px;
+}
+
+.mission-container{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    max-width: 900px;
+}
+
+.hidden{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+}
