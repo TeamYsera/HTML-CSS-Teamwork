@@ -1,4 +1,0 @@
-teamYsera
-=========
-
-Team YSERA
