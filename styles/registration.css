@@ -31,15 +31,15 @@ main section > div,  main > div {
     /*size*/
     width: 50%;
     /*background and color*/
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
+    background-color: #ebe8de;
+    color: #000;
     /*text and fonts*/
     text-align: center;
     /*padding and margin*/
     padding: 2rem;
     margin: 0 auto 1rem auto;
     /*shadows*/
-    box-shadow : 0.5rem 0.5rem #000000;
+    box-shadow :  10px 10px 20px #888888   ;
     position: relative;
 }
 

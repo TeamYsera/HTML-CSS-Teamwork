@@ -1,0 +1,80 @@
+
+main {
+    /*size*/
+    width: 800px;
+    min-height: 500px;
+    /*padding*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    /*text and fonts*/
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Tahoma", "Helvetica", San-serif;
+}
+
+main > section {
+    /*size*/
+    width: 85%;
+    /*background and color*/
+    background-color: #ebe8de;
+
+}
+
+main figure {
+    /*size*/
+    display: inline-block;
+}
+
+main > section, main figure {
+    /*background and color*/
+    background-color: #ebe8de;
+    /*text and fonts*/
+    text-align: left;
+    /*padding and margin*/
+    padding: 2rem;
+    margin: 0 auto 1rem auto;
+    /*shadows*/
+    box-shadow:  10px 10px 20px #888888   ;
+    position: relative;
+}
+
+main figure img {
+    height: 250px;
+}
+
+main div div figure:first-child{
+    margin-right: 110px;
+}
+
+main > div{
+    position: relative;
+    padding-top: 50px;
+}
+
+main > div > figure{
+    position: absolute;
+    top: 0px;
+    left: 36%;
+}
+
+.figure-Nakov {
+    z-index: 200;
+}
+
+.figure-Gosho{
+    z-index: 150;
+}
+
+main div figure div {
+    margin-top: 5px
+}
+
+.span-italic{
+    font-style: italic;
+}
+
+.span-bold {
+    font-weight: bold;
+}
+
