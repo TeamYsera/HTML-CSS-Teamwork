@@ -10,7 +10,6 @@ body {
     margin: -160px 0 0 -360px;
     position: absolute;
     left: 50%;
-    overflow: hidden;
 }
 .logo {
     bottom: 100%;
