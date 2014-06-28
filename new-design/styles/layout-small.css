@@ -61,3 +61,21 @@ header>nav>ul>li>a {
 header>nav>ul>li>a:hover {
     padding-left: 0;
 }
+
+footer{
+    height: auto;
+}
+
+footer .wrapper{
+    padding-bottom: 75px;
+}
+
+footer .wrapper article{
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.social {
+    display: none;
+}

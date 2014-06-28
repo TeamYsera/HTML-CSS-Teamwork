@@ -11,17 +11,19 @@ footer {
 
 footer .wrapper{
     width: auto;
-    max-width: 900px;
+    max-width: 960px;
     line-height: 20px;
     margin: 0 auto;
     padding-top: 30px;
+    box-sizing: border-box;
 }
 
-footer .wrapper article {
+footer .wrapper article{
+    display: block;
     font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
     color: #ababab;
     float: left;
-    width: 280px;
+    width: 300px;
     margin-right: 20px;
 }
 
@@ -42,9 +44,11 @@ footer .wrapper article a:hover{
 }
 
 #social {
+    display: block;
     height: 70px;
     background: #1d1d1d;
     position: absolute;
+    vertical-align: baseline;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -52,14 +56,16 @@ footer .wrapper article a:hover{
 
 #social .wrapper{
     position: relative;
-    padding-top: 25px;
+    padding: 25px 0px;
     color: #5e5e5e;
 }
 
 #social .wrapper .social {
     position: absolute;
+    overflow: auto;
     right: 0;
     top: 25px;
+    max-width: 45%;
 }
 
 #social .wrapper .social a{
@@ -69,7 +75,7 @@ footer .wrapper article a:hover{
     -o-transition: opacity .25s ease;
     transition: opacity .25s ease;
     opacity: 0.3;
-    margin-left: 12px;
+    margin-left: 5px;
     display: block;
     float: left;
 }
@@ -100,4 +106,9 @@ footer a{
     -ms-transition: prop time;
     -o-transition: prop time;
     transition: color 0.5s ease;
+}
+
+.hidden{
+    clip: rect(1px,1px,1px,1px);
+    position: absolute;
 }
