@@ -16,17 +16,22 @@ h3 {
 	text-align: center;
 	padding-top: 10px;
 }
-hr {
-	color: #E55511;
-}
 
 p{
 	font-family: 'mywebfont', Verdana;
 	word-wrap: break-word;
 	font-size: 25px;
-	overflow: auto;
-	text-align: center;
-	line-height: 33px;
+	margin-left: 90px;
+	max-width: 710px;
+
+}
+img.list {
+	width: 700px;
+	height: 250px;
+	margin-left: 90px;
+}
+.orange {
+	color:#E55511;
 }
 .contacts-container div {
 	background-color: #ebe8de;
@@ -40,24 +45,14 @@ p{
 .contacts-container figure{
 	margin: 10px 10px;
 }
-
-.contacts-container figure img, figcaption {
-	width: 200px;
-	font-size: 12px;
-}
 .contacts-container figure img {
-	margin-left: 19em;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-left: 0px;
 }
 
 .contacts-container{
-	display: block;
+
 	margin: 0 auto;
 	position: relative;
-	width: auto;
 	max-width: 900px;
-}
-.hidden{
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
 }
