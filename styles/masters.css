@@ -1,0 +1,63 @@
+body{
+	font-family:  'mywebfont';
+}
+h1 {
+	text-align: center;
+	font-size: 55px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	color: #E55511;
+}
+h3 {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 45px;
+	color: rgba(22, 27, 22, 1);
+	text-align: center;
+	padding-top: 10px;
+}
+hr {
+	color: #E55511;
+}
+
+p{
+	font-family: 'mywebfont', Verdana;
+	word-wrap: break-word;
+	font-size: 25px;
+	overflow: auto;
+	text-align: center;
+	line-height: 33px;
+}
+.contacts-container div {
+	background-color: #ebe8de;
+	padding: 10px;
+	box-shadow: 10px 10px 20px #888888   ;
+}
+.contacts-container article{
+	padding-bottom: 30px;
+}
+
+.contacts-container figure{
+	margin: 10px 10px;
+}
+
+.contacts-container figure img, figcaption {
+	width: 200px;
+	font-size: 12px;
+}
+.contacts-container figure img {
+	margin-left: 19em;
+	padding-bottom: 10px;
+}
+
+.contacts-container{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+	max-width: 900px;
+}
+.hidden{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+}
