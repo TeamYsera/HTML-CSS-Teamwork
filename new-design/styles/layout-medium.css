@@ -1,16 +1,16 @@
 body {
     margin: 0;
     padding: 0 10px;
-    overflow: hidden;
 }
 #post-header {
     box-sizing: border-box;
-    width: 100%;
+    width: 660px;
     overflow: hidden;
     height: 180px;
     margin: -160px 0 0 -360px;
     position: absolute;
     left: 50%;
+    overflow: hidden;
 }
 .logo {
     bottom: 100%;
