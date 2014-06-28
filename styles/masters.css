@@ -27,7 +27,7 @@ p{
 }
 img.list {
 	width: 700px;
-	height: 250px;
+	height: 300px;
 	margin-left: 90px;
 }
 .orange {
@@ -55,4 +55,8 @@ img.list {
 	margin: 0 auto;
 	position: relative;
 	max-width: 900px;
+}
+.hidden{
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
 }
