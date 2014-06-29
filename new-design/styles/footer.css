@@ -1,0 +1,113 @@
+/*footer styling*/
+
+footer {
+    width: 100%;
+    background-color:rgba(0,0,0,0.78);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer>.wrapper{
+    width: auto;
+    max-width: 960px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    min-height: 280px;
+    box-sizing: border-box;
+}
+
+footer .wrapper article {
+    font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
+    color: #ababab;
+    float: left;
+    width: 32%;
+    margin-right: 10px;
+}
+footer .wrapper article:last-child {
+    margin-right: 0;
+}
+footer .wrapper article h4 {
+    font-size: 26px;
+    color: #e55511;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer .wrapper ul{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+footer .wrapper article a:hover{
+    color: #e55511;
+    opacity: 0.5;
+}
+
+#social {
+    height: 70px;
+    background: #1d1d1d;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#social .wrapper{
+    max-width: 960px;
+    padding: 25px 10px 0 10px;
+    color: #5e5e5e;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0 auto;
+}
+#social .wrapper p {
+    float: left;
+    overflow: hidden;
+}
+#social .wrapper .social {
+    float: right;
+}
+
+#social .wrapper .social a{
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    -ms-transition: opacity .25s ease;
+    -o-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    opacity: 0.3;
+    margin-left: 12px;
+    display: block;
+    float: left;
+}
+
+#social .wrapper img{
+    width: 32px;
+}
+
+#social .wrapper .social a:hover{
+    opacity: 1;
+    color: #e55511;
+}
+
+#social .wrapper a{
+    color: #ababab;
+}
+
+#social .wrapper a:hover{
+    color: #fff;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: prop time;
+    -moz-transition: prop time;
+    -ms-transition: prop time;
+    -o-transition: prop time;
+    transition: color 0.5s ease;
+}
+@media all and (max-width: 920px){
+    #social .wrapper .social {
+        display: none;
+    }
+}
