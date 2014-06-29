@@ -26,9 +26,10 @@ p{
 
 }
 img.list {
-	width: 700px;
-	height: 300px;
-	margin-left: 90px;
+	width: 100%;
+	height: auto;
+
+
 }
 .orange {
 	color:#E55511;
