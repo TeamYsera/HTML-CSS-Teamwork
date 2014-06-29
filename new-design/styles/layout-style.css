@@ -48,7 +48,7 @@ main {
     width: 960px;
     margin: 0 auto;
     background-color: #faf9f6;
-    height: 700px;
+    min-height: 700px;
     box-sizing: border-box;
     box-shadow: 0 0 10px 3px rgba(0,0,0,0.1);
     display: block;
