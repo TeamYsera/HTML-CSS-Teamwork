@@ -45,7 +45,8 @@ header ul li a:hover {
     margin: -50px 0 0 -95px;
 }
 main {
-    width: 960px;
+    width: 100%;
+    max-width: 1120px;
     margin: 0 auto;
     background-color: #faf9f6;
     min-height: 700px;
