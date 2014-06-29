@@ -7,7 +7,7 @@ footer {
     box-sizing: border-box;
 }
 
-footer>.wrapper{
+footer>.footer-wrapper{
     width: auto;
     max-width: 960px;
     line-height: 20px;
@@ -17,29 +17,29 @@ footer>.wrapper{
     box-sizing: border-box;
 }
 
-footer .wrapper article {
+footer .footer-wrapper article {
     font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
     color: #ababab;
     float: left;
     width: 32%;
     margin-right: 10px;
 }
-footer .wrapper article:last-child {
+footer .footer-wrapper article:last-child {
     margin-right: 0;
 }
-footer .wrapper article h4 {
+footer .footer-wrapper article h4 {
     font-size: 26px;
     color: #e55511;
     font-weight: bold;
     text-align: center;
 }
 
-footer .wrapper ul{
+footer .footer-wrapper ul{
     font-size: 20px;
     margin-left: 10px;
 }
 
-footer .wrapper article a:hover{
+footer .footer-wrapper article a:hover{
     color: #e55511;
     opacity: 0.5;
 }
@@ -51,7 +51,7 @@ footer .wrapper article a:hover{
     box-sizing: border-box;
 }
 
-#social .wrapper{
+#social .subfooter-wrapper{
     max-width: 960px;
     padding: 25px 10px 0 10px;
     color: #5e5e5e;
@@ -59,11 +59,11 @@ footer .wrapper article a:hover{
     height: 100% !important;
     margin: 0 auto;
 }
-#social .wrapper p {
+#social .subfooter-wrapper p {
     float: left;
     overflow: hidden;
 }
-#social .wrapper .social {
+#social .subfooter-wrapper .social {
     float: right;
 }
 
@@ -79,20 +79,20 @@ footer .wrapper article a:hover{
     float: left;
 }
 
-#social .wrapper img{
+#social .subfooter-wrapper img{
     width: 32px;
 }
 
-#social .wrapper .social a:hover{
+#social .subfooter-wrapper .social a:hover{
     opacity: 1;
     color: #e55511;
 }
 
-#social .wrapper a{
+#social .subfooter-wrapper a{
     color: #ababab;
 }
 
-#social .wrapper a:hover{
+#social .subfooter-wrapper a:hover{
     color: #fff;
 }
 
@@ -107,7 +107,7 @@ footer a{
     transition: color 0.5s ease;
 }
 @media all and (max-width: 920px){
-    #social .wrapper .social {
+    #social .subfooter-wrapper .social {
         display: none;
     }
 }
