@@ -1,14 +1,15 @@
 
 main {
     /*size*/
-    width: 800px;
+    display: block;
+    width: 100%;
+    max-width: 800px;
     min-height: 500px;
     /*padding*/
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     margin: 0 auto;
     /*text and fonts*/
-    text-align: center;
     font-size: 1.6rem;
     font-family: "Tahoma", "Helvetica", San-serif;
 }
@@ -35,7 +36,7 @@ main > section, main figure {
     padding: 2rem;
     margin: 0 auto 1rem auto;
     /*shadows*/
-    box-shadow:  10px 10px 20px #888888   ;
+    box-shadow: 10px 10px 20px #888888;
     position: relative;
 }
 
@@ -43,26 +44,26 @@ main figure img {
     height: 250px;
 }
 
-main div div figure:first-child{
+main div div figure:first-child {
     margin-right: 110px;
 }
 
-main > div{
+main > div {
     position: relative;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
-main > div > figure{
+main > div > figure {
     position: absolute;
     top: 0px;
-    left: 36%;
+    left: 32%;
 }
 
 .figure-Nakov {
     z-index: 200;
 }
 
-.figure-Gosho{
+.figure-Gosho {
     z-index: 150;
 }
 
@@ -70,7 +71,7 @@ main div figure div {
     margin-top: 5px
 }
 
-.span-italic{
+.span-italic {
     font-style: italic;
 }
 
@@ -78,3 +79,43 @@ main div figure div {
     font-weight: bold;
 }
 
+/*Responsive page*/
+
+@media only screen and (max-width: 801px) {
+
+    .figure-Nakov {
+        position: static;
+    }
+
+    figure {
+        min-width: 100%;
+    }
+
+    main figure img {
+        height: 150px;
+        margin-right: 25px;
+        float: left;
+    }
+
+
+    main > section {
+        display: none;
+    }
+
+    main > div{
+        padding: 0;
+    }
+
+    main div div figure div{
+        margin-right: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .span-bold {
+        display: block;
+    }
+
+}

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/header.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="styles/home.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="styles/footer.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" media='screen and (max-width: 980px) and (min-width: 640px)' href="styles/footer-medium.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 640px)' href="styles/footer-small.css"/>
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'/>
@@ -31,9 +33,6 @@
                     <a href="team.html">екип</a>
                 </li>
                 <li>
-                    <a href="weapons.html">цели</a>
-                </li>
-                <li>
                     <a href="registration.html">Кандидатстване</a>
                 </li>
                 <li>
@@ -54,17 +53,34 @@
                 </figure>
             </article>
         </div>
+
+
         <div>
             <article>
-                <figure>
+                <figure class="targets">
                     <img src="img/home-img.png" alt="Кои сме ние?">
                     <span class="question">Кои сме ние?</span>
                     <span class="answer">Супер Уни</span>
                 </figure>
 
             </article>
-            <article>
+
+            <article class="trainer-h">
                 <figure>
+                    <img src="img/trainers-h.png" alt="Екипът">
+                    <div class="question"><div class="padding-top">Екипът</div></div>
+                </figure>
+            </article>
+
+            <article class="trainer-h">
+                <figure>
+                    <img src="img/training-h.png" alt="Обучение">
+                    <div class="question"><div class="padding-top">Обучение</div></div>
+                </figure>
+            </article>
+
+            <article>
+                <figure class="targets">
                     <img src="img/targets.png" alt="Какви са нашите цели?">
                     <span class="question">Какви са нашите цели?</span>
                     <span class="answer">Хиляди супер-програмисти</span>
@@ -85,7 +101,7 @@
     <h2 class="hidden">Super uni footer</h2>
     <section class="wrapper">
         <h3 class="hidden">Footer section</h3>
-        <article>
+        <article class="left">
             <h4>За университета</h4>
             <ul>
                 <li>
@@ -98,15 +114,15 @@
                     <a href="/">Нашите врагове</a>
                 </li>
                 <li>
-                    <a href="/">Тренировъчeн център</a>
+                    <a href="/">Тренировъчни полета</a>
                 </li>
             </ul>
         </article>
-        <article>
+        <article class="middle">
             <h4>Приятели</h4>
             <ul>
                 <li>
-                    <a href="https://softuni.bg">Софтуерен университет</a>
+                    <a  href="https://softuni.bg">Софтуерен университет</a>
                 </li>
                 <li>
                     <a href="http://nakov.com">Super master</a>
@@ -116,7 +132,7 @@
                 </li>
             </ul>
         </article>
-        <article>
+        <article class="right">
             <h4>За контакти</h4>
             <ul>
                 <li>
@@ -139,12 +155,10 @@
     </section>
     <section id="social">
         <h3 class="hidden">Social contacts</h3>
-
         <div class="wrapper">
-            <p>some copyright text and grtitude to <a href="http://iconarchive.com">Iconarchive</a> for the icons,
-                <a href="http://fontfabric.com">fontfabric</a> and <a href="http://www.rolandhuse.com">Roland
-                    Huse </a>for the fonts.</p>
-
+            some copyright text and gratitude to <a href="http://iconarchive.com">Iconarchive</a> for the icons,
+            <a href="http://fontfabric.com">fontfabric</a> and <a href="http://www.rolandhuse.com">Roland
+            Huse </a>for the fonts.
             <div class="social">
                 <a href="https://facebook.com">
                     <img src="icons/5-facebook.png" alt="Facebook"/>
@@ -153,7 +167,7 @@
                     <img src="icons/5-tube.png" alt="Google plus icon"/>
                 </a>
                 <a href="https://twitter.com">
-                    <img src="icons/5-twitter.png" alt="Twitter"/>
+                    <img src="icons/5-twitter.png" alt="Twitter""/>
                 </a>
                 <a href="https://linkedin.com">
                     <img src="icons/5-in.png" alt="LinkedIn"/>

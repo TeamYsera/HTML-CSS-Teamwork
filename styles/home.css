@@ -49,20 +49,21 @@ article figure .question{
     opacity: 0.65;
 }
 
-.main-container article.trainer .question{
-    width: 100%;
-    height: 100%;
-    font-size: 5rem;
+.main-container article.trainer .question,
+.main-container article.trainer-h .question{
     padding-top: 0;
 }
 
-.main-container article.training .question{
+.main-container article.training .question,
+.main-container article.training-h .question,
+.main-container article.trainer .question,
+.main-container article.trainer-h .question{
     width: 100%;
     height: 100%;
     font-size: 5rem;
 }
 
-article figure span.answer{
+article figure.targets span.answer{
     top: 0;
     width: 400px;
     height: auto;
@@ -87,3 +88,34 @@ article figure:hover span.answer {
 .training div div.padding-top{
     padding-top: 70px;
 }
+
+.training-h, .trainer-h{
+    display: none;
+}
+
+@media only screen and (max-width: 750px){
+    .trainer, .training{
+        display: none;
+    }
+
+    .training-h, .trainer-h{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+
+    .main-container article figure img,
+    article figure.targets span.answer,
+    article figure .question{
+        width: 300px;
+    }
+
+    .main-container article.training-h .question,
+    .main-container article.trainer-h .question,
+    .main-container div article figure.targets .question{
+        font-size: 3rem;
+    }
+
+ }

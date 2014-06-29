@@ -20,7 +20,7 @@ main > section{
     position: relative;
     text-align: center;
     /*padding and margin*/
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 #startTest {
@@ -127,4 +127,20 @@ main section div p, main section h1, main section form {
 }
 
 
+@media only screen and (max-width: 470px) {
+    main a{
+        width: 67%;
+        font-size: 1.4rem;
+    }
+
+
+    main section > div,  main > div, main div.result {
+        width: 250px;
+    }
+
+    img.css {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
 

@@ -1,0 +1,9 @@
+footer .wrapper{
+    margin: 0 auto ;
+    width: auto;
+    max-width: 640px;
+}
+footer .wrapper article{
+    width: 190px;
+    margin-right: 17px;
+}
