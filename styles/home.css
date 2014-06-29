@@ -1,9 +1,18 @@
-main.main-container {
-    position: relative;
-    margin: 10px 0;
+@font-face {
+    font-family: 'MyWebFont';
+    src: url("../fonts/beer-money.ttf");
 }
 
-main > div{
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+main.main-container {
+    font-family: MyWebFont;
+}
+
+main.main-container > div{
     text-align: center;
 }
 
@@ -27,7 +36,7 @@ main.main-container > div > div {
     width: 134px;
 }
 
-article figure .question, span.answer{
+.main-container article figure .question, span.answer{
     font-size: 4rem;
     position: absolute;
     left: 0px;
@@ -40,7 +49,7 @@ article figure .question, span.answer{
     transition: all .5s ease;
 }
 
-article figure .question{
+.main-container article figure .question{
     top: 0px;
     width: 400px;
     height: auto;
@@ -63,7 +72,7 @@ article figure .question{
     font-size: 5rem;
 }
 
-article figure.targets span.answer{
+.main-container article figure.targets span.answer{
     top: 0;
     width: 400px;
     height: auto;
@@ -73,15 +82,15 @@ article figure.targets span.answer{
 
 }
 
-article figure:hover .question {
+.main-container article figure:hover .question {
     opacity: 0.02;
 }
 
-article figure:hover span.answer {
+.main-container article figure:hover span.answer {
     opacity: 0.8;
 }
 
-.trainer div div.padding-top{
+.main-container .trainer div div.padding-top{
      padding-top: 110px;
  }
 
@@ -93,7 +102,7 @@ article figure:hover span.answer {
     display: none;
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 781px){
     .trainer, .training{
         display: none;
     }
@@ -104,11 +113,11 @@ article figure:hover span.answer {
 
 }
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 450px){
 
     .main-container article figure img,
-    article figure.targets span.answer,
-    article figure .question{
+    .main-container article figure.targets span.answer,
+    .main-container article figure .question{
         width: 300px;
     }
 
@@ -118,4 +127,22 @@ article figure:hover span.answer {
         font-size: 3rem;
     }
 
+    main.main-container div{
+        margin: 0;
+    }
+
+    html body main{
+        padding: 0px;
+    }
+
  }
+
+@media only screen and (max-width: 351px){
+
+    .main-container article figure img,
+    .main-container article figure.targets span.answer,
+    .main-container article figure .question{
+        width: 250px;
+    }
+
+}

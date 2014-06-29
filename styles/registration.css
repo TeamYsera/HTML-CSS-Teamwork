@@ -1,12 +1,11 @@
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
 main {
-    /*size*/
-    width: 100%;
-    min-height: 500px;
-    /*padding*/
-    padding-top: 30px;
     /*text and fonts*/
     font-size: 1.8rem;
-    font-family:   "Tahoma", "Helvetica", San-serif;
 }
 
 main > section{
@@ -16,11 +15,6 @@ main > section{
 #start, #question1, #question2, #question3, #question4, #question5, #result, #startTest {
     /*size*/
     display: none;
-    /*position*/
-    position: relative;
-    text-align: center;
-    /*padding and margin*/
-    padding: 2rem 0;
 }
 
 #startTest {
@@ -56,7 +50,7 @@ main div.result{
 }
 
 img.css {
-    width: 20%;
+    width: 50%;
     margin-bottom: 10px;
 }
 
@@ -127,20 +121,33 @@ main section div p, main section h1, main section form {
 }
 
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 640px) {
     main a{
         width: 67%;
         font-size: 1.4rem;
     }
 
-
     main section > div,  main > div, main div.result {
-        width: 250px;
+        width: 270px;
+        padding: 0.5rem;
     }
 
     img.css {
-        width: 40%;
         margin-bottom: 10px;
     }
+}
+
+@media only screen and (max-width: 400px) {
+
+    main form label{
+        font-size: 1.4rem;
+    }
+
+    main section > div,  main > div, main div.result {
+        width: 200px;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+    }
+
 }
 

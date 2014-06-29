@@ -1,17 +1,15 @@
+html {
+    font-size: 10px;
+}
 
 main {
     /*size*/
-    display: block;
-    width: 100%;
     max-width: 800px;
     min-height: 500px;
     /*padding*/
-    padding-top: 20px;
     padding-bottom: 30px;
-    margin: 0 auto;
     /*text and fonts*/
     font-size: 1.6rem;
-    font-family: "Tahoma", "Helvetica", San-serif;
 }
 
 main > section {
@@ -34,10 +32,13 @@ main > section, main figure {
     text-align: left;
     /*padding and margin*/
     padding: 2rem;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto;
     /*shadows*/
     box-shadow: 10px 10px 20px #888888;
-    position: relative;
+}
+
+main > section{
+    margin-top: 2rem;
 }
 
 main figure img {
@@ -53,10 +54,14 @@ main > div {
     padding-top: 80px;
 }
 
+main > div > div{
+    margin: 0 auto;
+}
+
 main > div > figure {
     position: absolute;
     top: 0px;
-    left: 32%;
+    left: 34%;
 }
 
 .figure-Nakov {
@@ -80,15 +85,33 @@ main div figure div {
 }
 
 /*Responsive page*/
-
 @media only screen and (max-width: 801px) {
 
-    .figure-Nakov {
+    .figure-Nakov, main > div {
         position: static;
     }
 
-    figure {
-        min-width: 100%;
+   main div{
+       width: 100%;
+   }
+
+   main figure{
+       /*width: 100%;*/
+       margin-bottom: 10px;
+       display: block;
+    }
+
+    main div div figure:first-child {
+        margin-right: 0px;
+    }
+
+    main figure:after{
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
     }
 
     main figure img {
@@ -112,7 +135,7 @@ main div figure div {
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
 
     .span-bold {
         display: block;
