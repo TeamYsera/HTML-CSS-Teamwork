@@ -1,71 +1,69 @@
 /*footer styling*/
 
 footer {
-    position: relative;
-    clear: both;
-    width: auto;
-    height:250px;
-    background: #333333;
-    border-bottom: 9px solid #1d1d1d ;
+    width: 100%;
+    background-color:rgba(0,0,0,0.78);
+    margin: 0;
+    box-sizing: border-box;
 }
 
-footer .wrapper{
+footer>.footer-wrapper{
     width: auto;
     max-width: 960px;
     line-height: 20px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 30px 10px;
+    min-height: 280px;
     box-sizing: border-box;
 }
 
-footer .wrapper article{
-    display: block;
-    font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
+footer .footer-wrapper article {
     color: #ababab;
     float: left;
-    width: 300px;
-    margin-right: 20px;
+    width: 32%;
+    margin-right: 10px;
 }
-
-footer .wrapper article h4 {
+footer .footer-wrapper article:last-child {
+    margin-right: 0;
+}
+footer .footer-wrapper article h4 {
     font-size: 26px;
     color: #e55511;
     font-weight: bold;
+    text-align: center;
 }
 
-footer .wrapper ul{
-    font-family: "MyWebFont";
+footer .footer-wrapper ul{
     font-size: 20px;
+    margin-left: 10px;
 }
 
-footer .wrapper article a:hover{
+footer .footer-wrapper article a:hover{
     color: #e55511;
     opacity: 0.5;
 }
 
 #social {
-    display: block;
     height: 70px;
     background: #1d1d1d;
-    position: absolute;
-    vertical-align: baseline;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
-#social .wrapper{
-    position: relative;
-    padding: 25px 0px;
+#social .subfooter-wrapper{
+    max-width: 960px;
+    padding: 25px 10px 0 10px;
     color: #5e5e5e;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0 auto;
 }
-
-#social .wrapper .social {
-    position: absolute;
-    overflow: auto;
-    right: 0;
-    top: 25px;
-    max-width: 45%;
+#social .subfooter-wrapper p {
+    float: left;
+    overflow: hidden;
+}
+#social .subfooter-wrapper .social {
+    float: right;
 }
 
 #social .wrapper .social a{
@@ -75,25 +73,25 @@ footer .wrapper article a:hover{
     -o-transition: opacity .25s ease;
     transition: opacity .25s ease;
     opacity: 0.3;
-    margin-left: 5px;
+    margin-left: 12px;
     display: block;
     float: left;
 }
 
-#social .wrapper img{
+#social .subfooter-wrapper img{
     width: 32px;
 }
 
-#social .wrapper .social a:hover{
+#social .subfooter-wrapper .social a:hover{
     opacity: 1;
     color: #e55511;
 }
 
-#social .wrapper a{
+#social .subfooter-wrapper a{
     color: #ababab;
 }
 
-#social .wrapper a:hover{
+#social .subfooter-wrapper a:hover{
     color: #fff;
 }
 
@@ -107,8 +105,8 @@ footer a{
     -o-transition: prop time;
     transition: color 0.5s ease;
 }
-
-.hidden{
-    clip: rect(1px,1px,1px,1px);
-    position: absolute;
+@media all and (max-width: 920px){
+    #social .subfooter-wrapper .social {
+        display: none;
+    }
 }

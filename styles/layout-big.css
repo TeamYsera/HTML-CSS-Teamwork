@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#post-header {
+    width: 660px;
+    height: 180px;
+    margin: -160px 0 0 -360px;
+    position: absolute;
+    left: 50%;
+}
+body>header {
+    position: relative;
+    margin: 160px auto 0;
+}
+body>header>nav {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0 0 0 41px;
+}
+main {
+    max-width: 1120px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+@media all and (max-width: 1156px) and (min-width: 980px ){
+    main {
+        margin-left: 10px;
+        width: 98%;
+    }
+}
