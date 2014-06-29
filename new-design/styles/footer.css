@@ -18,7 +18,7 @@ footer>.footer-wrapper{
 }
 
 footer .footer-wrapper article {
-    font-family: 'MyWebFont', 'Shadows Into Light',  sans-serif, cursive;
+    font-family: "Open Sans", sans-serif;
     color: #ababab;
     float: left;
     width: 32%;
