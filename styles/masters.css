@@ -6,14 +6,14 @@ h1 {
 	font-size: 40px;
 	margin-top: 10px;
 	margin-bottom: 50px;
-	color: #FFD727;
+	color: #2E64AE;
 	line-height: 40px;
 }
 h3 {
 	font-size: 45px;
 	font-weight: bold;
 	line-height: 40px;
-	color: rgba(22, 27, 22, 1);
+	color: #2E64AE;
 	text-align: center;
 	padding-top: 0px;
 }
@@ -22,8 +22,12 @@ p{
 	word-wrap: break-word;
 	font-size: 20px;
 	max-width: 100%;
-	text-align: center;
+	text-align: left;
 	line-height: 30px;
+}
+p:first-letter {
+	font-size: 40px;
+	color: #FFD727;
 }
 img.list {
 	max-width: 100%;
