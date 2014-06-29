@@ -1,61 +1,67 @@
 body{
-	font-family:  'mywebfont';
+	font-family: "Open sans";
 }
-h1 {
+.main-container h1 {
 	text-align: center;
-	font-size: 55px;
-	margin-top: 15px;
+	font-size: 40px;
+	margin-top: 10px;
 	margin-bottom: 50px;
-	color: #E55511;
+	color: #2E64AE;
+	line-height: 40px;
 }
-h3 {
-	font-size: 35px;
+.main-container h3 {
+	font-size: 45px;
 	font-weight: bold;
-	line-height: 45px;
-	color: rgba(22, 27, 22, 1);
+	line-height: 40px;
+	color: #2E64AE;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 0px;
 }
 
-p{
-	font-family: 'mywebfont', Verdana;
+.main-container p{
 	word-wrap: break-word;
-	font-size: 25px;
-	margin-left: 90px;
-	max-width: 710px;
-
+	font-size: 20px;
+	max-width: 100%;
+	text-align: left;
+	line-height: 30px;
+}
+.main-container p:first-letter {
+	font-size: 40px;
+	color: #FFD727;
 }
 img.list {
-	width: 100%;
-	height: auto;
-
-
+	max-width: 100%;
+}
+.italic {
+	font-style: italic;
+	font-weight: bolder;
+}
+.image-wrapper > img {
+	width: 700px;
+	height: 360px;
 }
 .orange {
 	color:#E55511;
 }
-.contacts-container div {
-	background-color: #ebe8de;
-	padding: 10px;
-	box-shadow: 10px 10px 20px #888888   ;
-}
-.contacts-container article{
-	padding-bottom: 30px;
+.main-container article{
+	padding-bottom: 15px;
 }
 
-.contacts-container figure{
+.main-container figure{
 	margin: 10px 10px;
 }
-.contacts-container figure img {
+.main-container figure img {
 	padding-top: 10px;
 	margin-left: 0px;
 }
-
-.contacts-container{
-
+.main-container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.wrapper {
 	margin: 0 auto;
 	position: relative;
-	max-width: 900px;
+	max-width: 700px;
 }
 .hidden{
 	position: absolute;
