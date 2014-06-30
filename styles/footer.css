@@ -12,7 +12,7 @@ footer {
     max-width: 1120px;
     line-height: 20px;
     margin: 0 auto;
-    min-height: 220px;
+    min-height: 250px;
     box-sizing: border-box;
 }
 
@@ -96,6 +96,15 @@ footer a{
     -ms-transition: prop time;
     -o-transition: prop time;
     transition: color 0.5s ease;
+}
+
+#validators{
+    float: right;
+    width: 28%;
+}
+
+#validators img{
+    float: right;
 }
 
 @media all and (max-width: 920px){

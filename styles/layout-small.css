@@ -67,7 +67,7 @@ footer{
 }
 
 footer .footer-wrapper{
-    padding: 10px 0;
+    padding: 10px 0 45px 0;
 }
 
 footer .footer-wrapper article{
@@ -90,3 +90,12 @@ footer .footer-wrapper article ul li{
 .social {
     display: none;
 }
+
+ #validators{
+     float: none;
+     margin: 0 auto;
+ }
+
+ #validators img{
+     margin: 3px;
+ }
