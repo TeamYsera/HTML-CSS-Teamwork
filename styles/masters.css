@@ -1,16 +1,24 @@
-body{
+body {
 	font-family: "Open sans";
 }
+@media only screen and (max-width: 320px) {
+	.main-container h1 {
+		font-size: 3em;
+	}
+	.main-container h3 {
+		font-size: 5em;
+	}
+}
 .main-container h1 {
-	text-align: center;
 	font-size: 40px;
+	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 50px;
 	color: #2E64AE;
 	line-height: 40px;
 }
 .main-container h3 {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: bold;
 	line-height: 40px;
 	color: #2E64AE;
