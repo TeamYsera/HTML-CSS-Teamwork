@@ -65,7 +65,7 @@ main > div > div{
 main > div > figure {
     position: absolute;
     top: 0px;
-    left: 34%;
+    left: 32.5%;
 }
 
 .figure-Nakov {
@@ -89,7 +89,7 @@ main div figure div {
 }
 
 /*Responsive page*/
-@media only screen and (max-width: 801px) {
+@media only screen and (max-width: 810px) {
 
     .figure-Nakov, main > div {
         position: static;
