@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="styles/header.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="styles/mission.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="styles/footer.css" type="text/css" media="screen"/>
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'/>
+    <meta charset="UTF-8">
+    <title>LAYOUT</title>
+    <link rel="stylesheet" href="styles/layout-style.css" media="screen"/>
+    <link rel="stylesheet" href="styles/mission.css" media="screen"/>
+    <link rel="stylesheet" href="styles/footer.css" media="screen"/>
+    <link rel="stylesheet" media='screen and (min-width: 980px)' href="styles/layout-big.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 980px) and (min-width: 640px)' href="styles/layout-medium.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 640px)' href="styles/layout-small.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
 <body>
+
 <header>
-    <div>
-        <div class="head-logo">
-            <a href="/">
-                <h1>uper</h1>
-                <img src="img/100h.png" alt="Logo"/>
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">начало</a>
-                </li>
-                <li>
-                    <a href="mission.html">за организацията</a>
-                </li>
-                <li>
-                    <a href="team.html">екип</a>
-                </li>
-                <li>
-                    <a href="registration.html">Кандидатстване</a>
-                </li>
-                <li>
-                    <a href="masters.html">контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <div id="post-header"></div>
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Michigan State" /></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">За организацията</a></li>
+            <li><a href="index.html">Екип</a></li>
+            <li><a href="index.html">Кандидатстване</a></li>
+            <li><a href="index.html">Контакти</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="mission-container">
-    <div class="wrapper">
+<main class="mission-container">
         <article class="mission">
             <h3>Нашата мисия</h3>
             <figure>
                 <img src="img/mission.jpg" alt="mission"/>
-                    <figcaption>Нашата мисия е да подготвяме войни в борбата със злите езици.</figcaption>
+                <figcaption>Нашата мисия е да подготвяме войни в борбата със злите езици.</figcaption>
             </figure>
             <p>
                 Нашата мисия е да тренираме войни, които да се борят със злите врагове на нашето кралство. Врагове като отцепника от могъщата империя на Майкросорт – сър Шарп, силната и много влиятелна лейди Джава (която реши да се оттегли от зациклилата във времето империя Оркъл),  суровият и леко скучноват водач на кралство Уеб – HTML и неговата прекрасна прекрасна дъщеря принцеса CSS, която внася красотата във цялото кралство Уеб, непредсказуемият, неконтролируем и набиращ голяма сила напоследък племенник на лейди Джава – Джокер Скрипт, и още, и още...
@@ -99,12 +83,11 @@
                 Той е племенник на лейди Джава, но разликите между тях са повече, отколкото приликите. Много често Джокерът е въвличан в съюз със скучният крал на кралство Уеб – HTML и хубавата му принцеса Селестиа (позната и само като CSS). Тези съюзи във времето са произвели много могъщи уеб приложения. Та ако искаме да се справим с Джокера първо трябва да сме опознали в детайли и да можем да се преборим с HTML и CSS. Но дори вече да сме ги привлекли на наша страна, Джокерът сам по себе си е много силен. Ще трябва специален подход към него. За тази цел сме създали допълнителни тренировъчни полета като космическия кораб Уебсторм, подводницата Съблайм и други, но разбира можете да изберете да тренирате и само в основната лаборатория Вижюал Стуидио.
             </p>
         </article>
-    </div>
-</section>
+</main>
+
 <footer>
-    <h2 class="hidden">Super uni footer</h2>
-    <section class="wrapper">
-        <h3 class="hidden">Footer section</h3>
+    <section class="footer-wrapper">
+        <h3 class="hidden">Footer wrapper</h3>
         <article>
             <h4>За университета</h4>
             <ul>
@@ -118,7 +101,7 @@
                     <a href="/">Нашите врагове</a>
                 </li>
                 <li>
-                    <a href="/">Тренировъчeн център</a>
+                    <a href="/">Тренировъчни полета</a>
                 </li>
             </ul>
         </article>
@@ -126,7 +109,7 @@
             <h4>Приятели</h4>
             <ul>
                 <li>
-                    <a href="https://softuni.bg">Софтуерен университет</a>
+                    <a  href="https://softuni.bg">Софтуерен университет</a>
                 </li>
                 <li>
                     <a href="http://nakov.com">Super master</a>
@@ -158,13 +141,11 @@
         </article>
     </section>
     <section id="social">
-        <h3 class="hidden">Social contacts</h3>
-
-        <div class="wrapper">
+        <h3 class="hidden">Sub footer wrapper</h3>
+        <div class="subfooter-wrapper">
             <p>some copyright text and grtitude to <a href="http://iconarchive.com">Iconarchive</a> for the icons,
                 <a href="http://fontfabric.com">fontfabric</a> and <a href="http://www.rolandhuse.com">Roland
                     Huse </a>for the fonts.</p>
-
             <div class="social">
                 <a href="https://facebook.com">
                     <img src="icons/5-facebook.png" alt="Facebook"/>
@@ -188,5 +169,6 @@
         </div>
     </section>
 </footer>
+
 </body>
 </html>
