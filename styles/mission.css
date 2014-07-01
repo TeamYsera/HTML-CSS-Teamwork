@@ -25,6 +25,15 @@ main{
     padding-bottom: 30px;
     height: 100%;
     display: inline-block;
+    /*tabbed styling*/
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background: #fff;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #cccccc;
+
 }
 
 .paragraf1::first-letter{
@@ -61,4 +70,33 @@ main{
     position: relative;
     clear: both;
     margin: 25px 0;
+    height: auto;
+    min-height: 1200px;
+}
+
+.tab{
+    float: left;
+}
+
+.tab input[type="radio"]{
+    display: none;
+}
+
+.tab label{
+    background: #eee;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    font-size: 26px;
+}
+
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ article {
+    z-index: 1;
 }
