@@ -103,6 +103,11 @@ footer a{
     width: 28%;
 }
 
+#validators img:hover{
+    opacity: 0.7;
+    color: #eee;
+}
+
 #validators img{
     float: right;
 }
