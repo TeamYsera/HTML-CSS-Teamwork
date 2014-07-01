@@ -22,6 +22,8 @@ main{
 
 .mission-container article{
     padding-bottom: 30px;
+    height: 100%;
+    display: inline-block;
 }
 
 .mission-container figure{
@@ -34,6 +36,11 @@ main{
     font-size: 12px;
 }
 
+.paragraf{
+    display: block;
+    text-align: justify;
+
+}
 
 .hidden{
     position: absolute;
