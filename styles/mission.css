@@ -27,6 +27,13 @@ main{
     display: inline-block;
 }
 
+.paragraf1::first-letter{
+    font-family: "beer money";
+    font-size: 300%;
+
+}
+
+
 .mission-container figure{
     margin: 10px 10px;
     float: left;
@@ -37,14 +44,21 @@ main{
     font-size: 12px;
 }
 
-.paragraf{
+.paragraf, .paragraf1{
     display: block;
     text-align: justify;
     margin-bottom: 10px;
-
 }
 
 .hidden{
     position: absolute;
     clip: rect(1px 1px 1px 1px);
+}
+
+/*tabs styles*/
+
+.tabs{
+    position: relative;
+    clear: both;
+    margin: 25px 0;
 }
