@@ -18,7 +18,7 @@
 	font-size: 32px;
 	font-weight: bold;
 	line-height: 40px;
-	color: #2E64AE;
+	color: #000000;
 	text-align: center;
 	padding-top: 0px;
 }
@@ -32,7 +32,7 @@
 }
 .main-container p:first-letter {
 	font-size: 40px;
-	color: #FFD727;
+	color: #000000;
 }
 img.list {
 	max-width: 100%;
@@ -44,9 +44,6 @@ img.list {
 }
 .image-wrapper > img {
 	width: 700px;
-}
-.orange {
-	color:#E55511;
 }
 .main-container article{
 	padding-bottom: 15px;
