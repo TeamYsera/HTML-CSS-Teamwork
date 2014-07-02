@@ -38,7 +38,10 @@ main > section, main figure {
     padding: 2rem;
     margin: 0 auto;
     /*shadows*/
-    box-shadow: 10px 10px 20px #888888;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 main > section{
