@@ -31,10 +31,12 @@ main section > div,  main > div {
     text-align: center;
     /*padding and margin*/
     padding: 2rem;
-    margin: 0 auto 1rem auto;
+    margin: 30px auto 1rem auto;
     /*shadows*/
-    box-shadow :  10px 10px 20px #888888   ;
+    box-shadow :  0 0 50px rgba(100,100,50,0.1);
     position: relative;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 
 main div.result{
@@ -72,7 +74,7 @@ main a {
     width: 20rem;
     /*background and color*/
     background-color: #2E64AE;
-    color: #000000;
+    color: #ffffff;
     /*text and fonts*/
     text-decoration: none;
     text-transform: uppercase;
@@ -82,7 +84,6 @@ main a {
     padding: 1rem;
     margin: 1rem;
     /*shadows*/
-    box-shadow: 0.5rem 0.5rem 0.5rem #000000;
 }
 
 main a:active {
@@ -90,7 +91,7 @@ main a:active {
 }
 
 main a:hover {
-    color: #ffffff;
+    color: #ffa627;
 }
 main section form {
     display: inline-block;
@@ -114,6 +115,16 @@ main section h1{
 main section:last-child h1{
     font-size: 4rem;
     text-align: center;
+}
+
+main section div p {
+    font-weight: bold;
+    color: #2e64ae;
+}
+
+.offtopic{
+    color: #000000 !important;
+    font-size: 1.7rem !important;
 }
 
 main section div p, main section h1, main section form {

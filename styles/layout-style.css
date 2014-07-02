@@ -38,7 +38,8 @@ header ul li a {
     font-weight: bold;
 }
 header ul li a:hover {
-    background: rgba(0,0,0,0.05);
+    color: #ffffff;
+    background: #2e64ae;
 }
 .logo {
     position: absolute;

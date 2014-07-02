@@ -15,7 +15,7 @@
 	line-height: 40px;
 }
 .main-container h3 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: bold;
 	line-height: 40px;
 	color: #000000;
@@ -25,21 +25,40 @@
 
 .main-container p{
 	word-wrap: break-word;
-	font-size: 20px;
+	font-size: 16px;
 	max-width: 100%;
-	text-align: center;
-	line-height: 30px;
+	text-align: left;
+	line-height: 28px;
+    margin: 0;
+    background-color: #2E64AE ;
+    box-sizing: border-box;
+    padding: 15px 30px 20px 30px;
+    color: #ffffff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 img.list {
 	max-width: 100%;
 	height: auto;
+    margin: 0;
+    padding: 0;
 }
 .italic {
 	font-style: italic;
 	font-weight: bolder;
 }
+.image-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+}
 .image-wrapper > img {
+    padding: 0 !important;
+    margin: 0 !important;
 	width: 700px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .main-container article{
 	padding-bottom: 15px;
@@ -50,7 +69,7 @@ img.list {
 }
 .main-container figure img {
 	padding-top: 10px;
-	margin-left: 0px;
+	margin-left: 0;
 }
 .main-container {
 	margin: 0 auto;
