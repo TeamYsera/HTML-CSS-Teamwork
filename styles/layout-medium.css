@@ -44,6 +44,14 @@ header ul li:nth-of-type(2) {
     margin-right: 0;
 }
 
+.tabs-container article p{
+    font-size: 1.3em;
+}
+
+.tabs-container article h3{
+    font-size: 1.8em;
+}
+
 footer .footer-wrapper{
     margin: 0 auto ;
     width: auto;
