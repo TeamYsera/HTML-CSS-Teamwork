@@ -1,0 +1,216 @@
+
+/*main styles*/
+
+@import "footer.css";
+
+@import "layout-style.css";
+
+
+/*Big Screen -  over 980px*/
+@media screen and (min-width: 980px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #post-header {
+        width: 660px;
+        height: 180px;
+        margin: -160px 0 0 -360px;
+        position: absolute;
+        left: 50%;
+    }
+    body>header {
+        position: relative;
+        margin: 160px auto 0;
+    }
+    body>header>nav {
+        width: 660px;
+        margin: 0 auto;
+        padding: 0 0 0 41px;
+    }
+    main {
+        max-width: 1120px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width: 1156px) and (min-width: 980px ){
+    main {
+        margin-left: 10px;
+        width: 98%;
+    }
+}
+
+/*Medium Screen -  of 980px to 640 px*/
+@media screen and (max-width: 980px) and (min-width: 640px){
+    body {
+        margin: 0;
+        padding: 0 10px;
+    }
+    #post-header {
+        box-sizing: border-box;
+        width: 660px;
+        overflow: hidden;
+        height: 180px;
+        margin: -160px 0 0 -360px;
+        position: absolute;
+        left: 50%;
+    }
+    .logo {
+        bottom: 100%;
+        margin-bottom: 8px;
+        margin-left: -98px;
+    }
+    .logo img {
+        height: 130px;
+    }
+    header {
+        text-align: center;
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        margin: 160px auto 0;
+    }
+    header>nav {
+        width: 470px;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    main {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    header ul {
+        width: 100%;
+    }
+    header ul li:nth-of-type(2) {
+        margin-right: 0;
+    }
+
+    footer .footer-wrapper{
+        margin: 0 auto ;
+        width: auto;
+        max-width: 640px;
+    }
+    footer .footer-wrapper article{
+        width: 30%;
+        margin-right: 5px;
+    }
+
+    footer .footer-wrapper article h4{
+        font-size: 1.8em;
+    }
+
+    footer .footer-wrapper article ul li{
+        font-size: 0.8em;
+    }
+}
+
+/*Small screen - under 640px*/
+@media screen and (max-width: 640px){
+    body {
+        margin: 0;
+        padding: 0 10px;
+    }
+    #post-header {
+        display: none;
+    }
+    .logo {
+        bottom: 100%;
+        left:50%;
+        margin: 0 0 0 -48px;
+        float: left;
+    }
+    .logo img {
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    header {
+        text-align: center;
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        margin: 100px auto 0;
+        height: 163px;
+    }
+    header>nav {
+        width: 450px;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    main {
+        width: 100% !important;
+        box-sizing: border-box;
+        margin-top:10px;
+        border:1px solid #aaaaaa;
+        padding: 10px;
+    }
+    header>nav {
+        width: 100%;
+    }
+    header>nav>ul {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    header>nav>ul>li:nth-of-type(2) {
+        margin-right: 0;
+    }
+    header>nav>ul>li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header>nav>ul>li>a {
+        padding-left: 0;
+        padding-right: 0;
+        border: 1px solid #aaaaaa;
+        margin-top: -1px;
+    }
+    header>nav>ul>li>a:hover {
+        padding-left: 0;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer .footer-wrapper{
+        padding: 10px 0 45px 0;
+    }
+
+    footer .footer-wrapper article{
+        float: none;
+        margin: 0 auto;
+    }
+
+    footer .footer-wrapper article:last-child{
+        margin: 0 auto;
+    }
+
+    footer .footer-wrapper article h4{
+        font-size: 1.8em;
+    }
+
+    footer .footer-wrapper article ul li{
+        font-size: 0.7em;
+    }
+
+    .social {
+        display: none;
+    }
+
+    #validators{
+        float: none;
+        margin: 0 auto;
+    }
+
+    #validators img{
+        margin: 3px;
+    }
+}
