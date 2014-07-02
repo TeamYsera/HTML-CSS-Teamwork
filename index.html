@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/footer.css"/>
     <link rel="stylesheet" href="styles/layout-style.css"/>
     <link rel="stylesheet" media='screen and (min-width: 980px)' href="styles/layout-big.css"/>
-    <link rel="stylesheet" media='screen and (max-width: 980px) and (min-width: 640px)' href="styles/layout-medium.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 980px) and (min-width: 640px)'
+          href="styles/layout-medium.css"/>
     <link rel="stylesheet" media='screen and (max-width: 640px)' href="styles/layout-small.css"/>
     <link rel="stylesheet" href="styles/home.css">
 
@@ -16,7 +17,7 @@
 
 <header>
     <div id="post-header"></div>
-    <a class="logo" href="index.html"><img src="img/logo.png" alt="Michigan State" /></a>
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Michigan State"/></a>
     <nav>
         <ul>
             <li><a href="mission.html">За организацията</a></li>
@@ -26,13 +27,18 @@
         </ul>
     </nav>
 </header>
-<main class="main-container" >
+<main class="main-container">
     <div>
         <div>
             <article class="trainer">
                 <figure>
-                    <img src="img/trainers.png" alt="Екипът">
-                    <div class="question"><div class="padding-top">Е<br>к<br>и<br>п<br>ъ<br>т</div></div>
+                    <a href="team.html">
+                        <img src="img/trainers.png" alt="Екипът">
+
+                        <div class="question">
+                            <div class="padding-top">Е<br>к<br>и<br>п<br>ъ<br>т</div>
+                        </div>
+                    </a>
                 </figure>
             </article>
         </div>
@@ -41,40 +47,59 @@
         <div>
             <article>
                 <figure class="targets">
-                    <img src="img/home-img.png" alt="Кои сме ние?">
-                    <span class="question">Кои сме ние?</span>
-                    <span class="answer">Супер Уни</span>
+                    <a href="mission.html">
+                        <img src="img/home-img.png" alt="Кои сме ние?">
+                        <span class="question">Кои сме ние?</span>
+                        <span class="answer">Супер Уни</span>
+                    </a>
                 </figure>
 
             </article>
 
             <article class="trainer-h">
                 <figure>
-                    <img src="img/trainers-h.png" alt="Екипът">
-                    <div class="question"><div class="padding-top">Екипът</div></div>
+                    <a href="team.html">
+                        <img src="img/trainers-h.png" alt="Екипът">
+
+                        <div class="question">
+                            <div class="padding-top">Екипът</div>
+                        </div>
+                    </a>
                 </figure>
             </article>
 
             <article class="trainer-h">
                 <figure>
-                    <img src="img/training-h.png" alt="Обучение">
-                    <div class="question"><div class="padding-top">Обучение</div></div>
+                    <a href="registration.html">
+                        <img src="img/training-h.png" alt="Обучение">
+
+                        <div class="question">
+                            <div class="padding-top">Обучение</div>
+                        </div>
+                    </a>
                 </figure>
             </article>
 
             <article>
                 <figure class="targets">
-                    <img src="img/targets.png" alt="Какви са нашите цели?">
-                    <span class="question">Какви са нашите цели?</span>
-                    <span class="answer">Хиляди супер-програмисти</span>
+                    <a href="mission.html">
+                        <img src="img/targets.png" alt="Какви са нашите цели?">
+                        <span class="question">Какви са нашите цели?</span>
+                        <span class="answer">Хиляди супер-програмисти</span>
+                    </a>
                 </figure>
             </article>
         </div>
         <diV>
             <article class="training">
                 <figure>
-                    <img src="img/training.png" alt="Обучение">
-                    <div class="question"><div class="padding-top">О<br>б<br>у<br>ч<br>е<br>н<br>и<br>е</div></div>
+                    <a href="registration.html">
+                        <img src="img/training.png" alt="Обучение">
+
+                        <div class="question">
+                            <div class="padding-top">О<br>б<br>у<br>ч<br>е<br>н<br>и<br>е</div>
+                        </div>
+                    </a>
                 </figure>
             </article>
         </diV>
@@ -88,16 +113,16 @@
             <h4>За университета</h4>
             <ul>
                 <li>
-                    <a href="/">Мисия</a>
+                    <a href="mission.html">Мисия</a>
                 </li>
                 <li>
-                    <a href="/">Екипът</a>
+                    <a href="team.html">Екипът</a>
                 </li>
                 <li>
-                    <a href="/">Нашите врагове</a>
+                    <a href="mission.html">Нашите врагове</a>
                 </li>
                 <li>
-                    <a href="/">Тренировъчни полета</a>
+                    <a href="masters.html">Тренировъчни полета</a>
                 </li>
             </ul>
         </article>
@@ -105,7 +130,7 @@
             <h4>Приятели</h4>
             <ul>
                 <li>
-                    <a  href="https://softuni.bg">Софтуерен университет</a>
+                    <a href="https://softuni.bg">Софтуерен университет</a>
                 </li>
                 <li>
                     <a href="http://nakov.com">Super master</a>
@@ -142,11 +167,13 @@
     </section>
     <section id="social">
         <h3 class="hidden">Sub footer wrapper</h3>
+
         <div class="subfooter-wrapper">
             <p>some copyright text and grtitude to <a href="http://iconarchive.com">Iconarchive</a> for the icons,
                 <a href="http://fontfabric.com">fontfabric</a> and <a href="http://www.rolandhuse.com">Roland
                     Huse </a>for the fonts.
             </p>
+
             <div class="social">
                 <a href="https://facebook.com">
                     <img src="icons/5-facebook.png" alt="Facebook"/>

@@ -50,7 +50,7 @@ main.main-container > div > div {
 }
 
 .main-container article figure .question{
-    top: 0px;
+    top: 0;
     width: 400px;
     height: auto;
     background: #000000;
@@ -95,7 +95,7 @@ main.main-container > div > div {
  }
 
 .training div div.padding-top{
-    padding-top: 70px;
+    padding-top: 12px;
 }
 
 .training-h, .trainer-h{
@@ -132,7 +132,7 @@ main.main-container > div > div {
     }
 
     html body main{
-        padding: 0px;
+        padding: 0;
     }
 
  }
