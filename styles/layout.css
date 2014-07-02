@@ -91,6 +91,10 @@
         margin-right: 0;
     }
 
+    .tabs-container article p{
+        font-size: 0.9rem;
+    }
+
     footer .footer-wrapper{
         margin: 0 auto ;
         width: auto;
@@ -176,6 +180,10 @@
         padding-left: 0;
     }
 
+    .tabs-container article p{
+        font-size: 0.8rem;
+    }
+
     footer{
         height: auto;
     }
@@ -213,4 +221,5 @@
     #validators img{
         margin: 3px;
     }
+
 }

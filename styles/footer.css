@@ -27,13 +27,13 @@ footer .footer-wrapper article:last-child {
     margin-right: 0;
 }
 footer .footer-wrapper article h4 {
-    font-size: 28px;
+    font-size: 24px;
     color: #e55511;
     font-weight: bold;
 }
 
 footer .footer-wrapper ul{
-    font-size: 20px;
+    font-size: 18px;
     margin-left: -40px;
 }
 
