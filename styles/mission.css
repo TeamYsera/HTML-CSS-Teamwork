@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'beer money';
+    font-family: 'myfont';
     src: url("../fonts/beer-money.ttf");
 }
 h3 {
@@ -32,7 +32,7 @@ main{
 }
 
 .paragraf1::first-letter{
-    font-family: "beer money";
+    font-family: "myfont";
     font-size: 300%;
 }
 
@@ -65,7 +65,7 @@ main{
 }
 
 .tabs-container label{
-    font-family: "beer money";
+    font-family: "myfont";
     font-weight: bold;
     padding: 5px 20px;
     position: relative;
