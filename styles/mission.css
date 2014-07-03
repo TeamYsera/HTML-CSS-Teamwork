@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'beer money';
+    src: url("../fonts/beer-money.ttf");
+}
 h3 {
     font-size: 28px;
     font-weight: bold;
@@ -75,9 +79,9 @@ main{
     font-size: 22px;
     background: #2e64ae;
     box-shadow:
-            0px 0px 0px 1px rgba(155,155,155,0.3),
-            1px 0px 0px 0px rgba(255,255,255,0.9) inset,
-            0px 2px 2px rgba(0,0,0,0.1);
+            0 0 0 1px rgba(155,155,155,0.3),
+            1px 0 0 0 rgba(255,255,255,0.9) inset,
+            0 2px 2px rgba(0,0,0,0.1);
 }
 
 .tabs-container label:hover{
@@ -93,9 +97,9 @@ main{
 .tabs-container input:checked + label, .tabs-container input:checked + label:hover{
     background: #76818c;
     color: #ffffff;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3),
-                0px 2px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3),
+                0 2px 2px rgba(0,0,0,0.1);
 }
 
 .tabs-container input{
@@ -104,7 +108,7 @@ main{
 
 .tabs-container article{
     position: relative;
-    height: 0px;
+    height: 0;
     background: rgba(255, 255, 255, 0.5);
     margin-top: -1px;
     overflow: hidden;
@@ -122,6 +126,6 @@ main{
     -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
     height: auto;
 }
